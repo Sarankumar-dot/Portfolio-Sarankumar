@@ -1,0 +1,449 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Sarankumar K - SDE Portfolio</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400..700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#211b00",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-secondary-container": "#706000",
+                      "surface-container-low": "#faf3e2",
+                      "background": "#fff9ec",
+                      "surface-variant": "#e9e2d2",
+                      "on-tertiary-fixed-variant": "#003ea8",
+                      "tertiary-fixed-dim": "#b4c5ff",
+                      "surface-tint": "#b71b40",
+                      "tertiary": "#0053db",
+                      "primary-fixed-dim": "#ffb2b8",
+                      "secondary-fixed": "#ffe24a",
+                      "error": "#ba1a1a",
+                      "outline-variant": "#e2bec0",
+                      "inverse-on-surface": "#f7f0df",
+                      "on-error-container": "#93000a",
+                      "primary": "#b71b40",
+                      "surface-container-highest": "#e9e2d2",
+                      "outline": "#8e7071",
+                      "on-background": "#1e1c12",
+                      "surface-container": "#f4eddd",
+                      "tertiary-container": "#638cff",
+                      "on-secondary-fixed-variant": "#524600",
+                      "inverse-surface": "#333025",
+                      "tertiary-fixed": "#dbe1ff",
+                      "on-primary-container": "#5d0019",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#fff9ec",
+                      "secondary-container": "#fddc00",
+                      "surface-dim": "#e0dac9",
+                      "on-primary": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fff9ec",
+                      "on-primary-fixed": "#40000f",
+                      "primary-container": "#ff5470",
+                      "on-surface": "#1e1c12",
+                      "secondary-fixed-dim": "#e3c600",
+                      "secondary": "#6d5e00",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-primary": "#ffb2b8",
+                      "surface-container-high": "#eee8d7",
+                      "on-surface-variant": "#5a4042",
+                      "on-tertiary-fixed": "#00174b",
+                      "primary-fixed": "#ffdadb",
+                      "on-primary-fixed-variant": "#91002c",
+                      "on-tertiary-container": "#00256c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-xl": "64px",
+                      "margin-page": "32px",
+                      "unit": "4px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "stack-lg": "32px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "label-bold": [
+                              "Space Mono"
+                      ],
+                      "body-md": [
+                              "Space Mono"
+                      ],
+                      "headline-lg-mobile": [
+                              "Space Grotesk"
+                      ],
+                      "headline-xl": [
+                              "Space Grotesk"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "label-sm": [
+                              "Space Mono"
+                      ],
+                      "body-lg": [
+                              "Space Mono"
+                      ],
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "headline-sm": [
+                              "Space Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .brutal-border {
+                @apply border-[3px] border-on-background;
+            }
+            .brutal-shadow {
+                @apply shadow-[6px_6px_0px_#000000];
+            }
+            .brutal-hover {
+                @apply hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all;
+            }
+            .brutal-divider {
+                @apply border-t-[3px] border-on-background my-stack-xl;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-background dark:bg-background text-primary dark:text-primary-fixed fixed top-0 w-full z-50 border-b-[3px] border-on-background dark:border-surface-variant shadow-[6px_6px_0px_#000000]">
+<div class="flex justify-between items-center w-full px-margin-page py-stack-md mx-auto">
+<div class="font-headline-sm text-headline-sm font-bold text-on-background dark:text-background tracking-tighter">
+                SARAN.DEV
+            </div>
+<nav class="hidden md:flex gap-4">
+<a class="text-on-primary bg-primary dark:bg-primary-container dark:text-on-primary-container px-4 py-1 rounded-full border-[3px] border-on-background active:scale-95 duration-100 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all font-label-bold text-label-bold" href="#about">About</a>
+<a class="text-on-background dark:text-background px-4 py-1 font-label-bold uppercase text-label-bold active:scale-95 duration-100 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all" href="#skills">Skills</a>
+<a class="text-on-background dark:text-background px-4 py-1 font-label-bold uppercase text-label-bold active:scale-95 duration-100 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all" href="#experience">Experience</a>
+<a class="text-on-background dark:text-background px-4 py-1 font-label-bold uppercase text-label-bold active:scale-95 duration-100 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all" href="#projects">Projects</a>
+<a class="text-on-background dark:text-background px-4 py-1 font-label-bold uppercase text-label-bold active:scale-95 duration-100 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0px_#000000] transition-all" href="#contact">Contact</a>
+</nav>
+<button class="brutal-border brutal-shadow brutal-hover bg-secondary-fixed text-on-secondary-fixed px-6 py-2 font-label-bold text-label-bold uppercase hidden md:block">
+                Resume
+            </button>
+</div>
+</header>
+<main class="pt-[120px] px-margin-page mx-auto max-w-7xl">
+<!-- Hero Section -->
+<section class="relative min-h-[70vh] flex flex-col justify-center items-start mt-stack-lg">
+<div class="absolute top-10 right-10 md:right-32 rotate-6 bg-primary-container text-on-primary-container brutal-border px-4 py-2 font-label-bold text-label-bold brutal-shadow z-10">
+                OPEN TO WORK
+            </div>
+<h1 class="font-headline-xl text-headline-xl mb-stack-md relative z-20">
+                Hi, I'm <span class="bg-secondary-fixed px-2 inline-block -rotate-1 brutal-border">Sarankumar K</span>
+</h1>
+<div class="flex items-center gap-2 mb-stack-lg">
+<span class="bg-inverse-surface text-inverse-on-surface px-4 py-2 brutal-border font-label-bold text-label-bold uppercase">
+                    Software Developer (SDE-1)
+                </span>
+<span class="bg-surface-container-highest px-4 py-2 brutal-border font-label-bold text-label-bold uppercase flex items-center gap-2">
+<span class="material-symbols-outlined">location_on</span> Tiruppur, India
+                </span>
+</div>
+<div class="flex flex-wrap gap-stack-md mt-stack-lg">
+<a class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 brutal-border brutal-shadow brutal-hover font-label-bold text-label-bold uppercase text-center" href="#projects">
+                    View Projects
+                </a>
+<a class="bg-surface-container-lowest text-on-background px-8 py-4 brutal-border brutal-shadow brutal-hover font-label-bold text-label-bold uppercase text-center flex items-center gap-2" href="#">
+<span class="material-symbols-outlined">download</span> Download Resume
+                </a>
+</div>
+</section>
+<hr class="brutal-divider">
+<!-- About Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="about">
+<div class="md:col-span-8">
+<h2 class="font-headline-lg text-headline-lg mb-stack-md uppercase bg-on-background text-background inline-block px-4 py-2 -rotate-1">About Me</h2>
+<div class="bg-surface-container-lowest brutal-border brutal-shadow p-stack-md">
+<p class="font-body-lg text-body-lg mb-4">
+                        I am a highly motivated MERN Stack Full-Stack Developer with a strong foundation in building scalable web applications. Recently graduated with a B.Tech, I view code as a disruptive force to build impactful solutions.
+                    </p>
+<p class="font-body-lg text-body-lg">
+                        I thrive in environments that challenge me to solve complex problems and am constantly exploring the 'tech-glitch' potential of modern engineering.
+                    </p>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-stack-md">
+<h3 class="font-headline-sm text-headline-sm uppercase border-b-[3px] border-on-background pb-2">Soft Skills</h3>
+<div class="flex flex-wrap gap-4 mt-2">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 brutal-border font-label-bold -rotate-2">Team Collaboration</span>
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 brutal-border font-label-bold rotate-1">Problem Solving</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 brutal-border font-label-bold -rotate-3">Adaptability</span>
+<span class="bg-surface-variant text-on-surface-variant px-3 py-1 brutal-border font-label-bold rotate-2">Communication</span>
+</div>
+</div>
+</section>
+<hr class="brutal-divider">
+<!-- Tech Stack -->
+<section class="py-stack-md" id="skills">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg uppercase tracking-tight">Tech Stack / Loadout</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
+<!-- Category -->
+<div class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col h-full relative">
+<div class="bg-secondary-fixed p-2 border-b-[3px] border-on-background font-headline-sm text-headline-sm uppercase">Frontend</div>
+<div class="p-stack-md flex flex-wrap gap-2">
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">React</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Tailwind</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Redux</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">HTML/CSS</span>
+</div>
+</div>
+<!-- Category -->
+<div class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col h-full relative -translate-y-2 translate-x-2">
+<div class="bg-primary-container p-2 border-b-[3px] border-on-background font-headline-sm text-headline-sm uppercase text-on-primary-container">Backend &amp; DB</div>
+<div class="p-stack-md flex flex-wrap gap-2">
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Node.js</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Express</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">MongoDB</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">PostgreSQL</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">MySQL</span>
+</div>
+</div>
+<!-- Category -->
+<div class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col h-full relative">
+<div class="bg-tertiary-container p-2 border-b-[3px] border-on-background font-headline-sm text-headline-sm uppercase text-on-tertiary-container">Tools / DevOps</div>
+<div class="p-stack-md flex flex-wrap gap-2">
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Git/GitHub</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Docker</span>
+<span class="bg-on-background text-background px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Postman</span>
+</div>
+</div>
+</div>
+</section>
+<hr class="brutal-divider">
+<!-- Experience -->
+<section class="py-stack-md" id="experience">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg uppercase bg-on-background text-background inline-block px-4 py-2 rotate-1">Experience</h2>
+<div class="relative pl-8 border-l-[4px] border-dashed border-on-background py-4">
+<div class="relative mb-stack-xl">
+<div class="absolute -left-[45px] top-0 w-6 h-6 bg-secondary-fixed brutal-border rounded-full z-10"></div>
+<div class="bg-surface-container-lowest brutal-border brutal-shadow p-stack-md ml-stack-md relative top-[-10px]">
+<div class="flex justify-between items-start flex-wrap gap-4 mb-4">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase">Web Developer Intern</h3>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 brutal-border font-label-sm text-label-sm">ST Software Solutions</span>
+</div>
+<ul class="list-none space-y-2 font-body-md text-body-md">
+<li class="flex items-start gap-2 before:content-['&gt;'] before:font-bold before:text-primary">Developed and maintained scalable full-stack applications using the MERN stack.</li>
+<li class="flex items-start gap-2 before:content-['&gt;'] before:font-bold before:text-primary">Collaborated with cross-functional teams to integrate APIs and improve UX.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<hr class="brutal-divider">
+<!-- Projects -->
+<section class="py-stack-md" id="projects">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg uppercase tracking-tight">Projects / Output</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg lg:gap-stack-xl">
+<!-- Project 1 -->
+<article class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col -rotate-1 hover:rotate-0 transition-transform">
+<div class="bg-primary-container p-3 border-b-[3px] border-on-background flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase text-on-primary-container truncate">Resume ATS Checker</h3>
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<div>
+<p class="font-body-md text-body-md mb-4">An automated system to parse and evaluate resumes against job descriptions.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">React</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Node</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Postgres</span>
+</div>
+</div>
+<button class="w-full bg-on-background text-background py-3 font-label-bold text-label-bold uppercase brutal-border brutal-hover">View Project</button>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col rotate-2 hover:rotate-0 transition-transform mt-4 md:mt-0">
+<div class="bg-secondary-fixed p-3 border-b-[3px] border-on-background flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase text-on-secondary-fixed truncate">Sellora</h3>
+<span class="material-symbols-outlined">storefront</span>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<div>
+<p class="font-body-md text-body-md mb-4">E-commerce platform backend architecture with containerized deployment.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">React</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Node</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Docker</span>
+</div>
+</div>
+<button class="w-full bg-on-background text-background py-3 font-label-bold text-label-bold uppercase brutal-border brutal-hover">View Project</button>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col rotate-1 hover:rotate-0 transition-transform">
+<div class="bg-tertiary-container p-3 border-b-[3px] border-on-background flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase text-on-tertiary-container truncate">Expense Tracker</h3>
+<span class="material-symbols-outlined">account_balance_wallet</span>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<div>
+<p class="font-body-md text-body-md mb-4">Financial management app to log, categorize, and visualize personal expenses.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">React</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Node</span>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">MySQL</span>
+</div>
+</div>
+<button class="w-full bg-on-background text-background py-3 font-label-bold text-label-bold uppercase brutal-border brutal-hover">View Project</button>
+</div>
+</article>
+<!-- Project 4 -->
+<article class="bg-surface-container-lowest brutal-border brutal-shadow flex flex-col -rotate-2 hover:rotate-0 transition-transform mt-4 md:mt-0">
+<div class="bg-surface-variant p-3 border-b-[3px] border-on-background flex justify-between items-center">
+<h3 class="font-headline-sm text-headline-sm font-bold uppercase text-on-surface-variant truncate">Notes App</h3>
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<div class="p-stack-md flex-grow flex flex-col justify-between">
+<div>
+<p class="font-body-md text-body-md mb-4">CRUD application for capturing ideas with robust authentication.</p>
+<div class="flex flex-wrap gap-2 mb-stack-md">
+<span class="bg-surface-container-highest text-on-surface px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">React</span>
+<span class="bg-surface-container-highest text-on-surface px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">Node</span>
+<span class="bg-surface-container-highest text-on-surface px-2 py-1 font-label-sm text-label-sm uppercase brutal-border">MySQL</span>
+</div>
+</div>
+<button class="w-full bg-on-background text-background py-3 font-label-bold text-label-bold uppercase brutal-border brutal-hover">View Project</button>
+</div>
+</article>
+</div>
+</section>
+<hr class="brutal-divider">
+<!-- Education & Contact Section Combo -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-stack-xl mb-stack-xl">
+<!-- Education -->
+<div>
+<h2 class="font-headline-md text-headline-md mb-stack-md uppercase border-b-[3px] border-on-background pb-2 inline-block">Education</h2>
+<div class="space-y-stack-md mt-4">
+<div class="bg-surface-container-lowest brutal-border p-4 brutal-shadow translate-x-2">
+<h4 class="font-headline-sm text-headline-sm font-bold uppercase">B.Tech</h4>
+<p class="font-label-bold text-label-bold text-outline">PSNA College of Engineering</p>
+</div>
+<div class="bg-surface-container-lowest brutal-border p-4 brutal-shadow -translate-x-2">
+<h4 class="font-headline-sm text-headline-sm font-bold uppercase">Class 12 / 10</h4>
+<p class="font-label-bold text-label-bold text-outline">Saradha Vidhyalaya</p>
+</div>
+</div>
+</div>
+<!-- Contact -->
+<div class="bg-secondary-fixed brutal-border brutal-shadow p-stack-lg flex flex-col justify-center items-start rotate-1" id="contact">
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tighter mb-4 text-on-secondary-fixed">Get In Touch</h2>
+<a class="font-headline-sm text-headline-sm md:text-headline-md font-bold text-on-secondary-fixed bg-surface-container-lowest px-4 py-2 brutal-border brutal-hover mb-stack-md inline-block break-all" href="mailto:kumarsaran2004@gmail.com">
+                    kumarsaran2004@gmail.com
+                </a>
+<div class="flex gap-4">
+<button aria-label="LinkedIn" class="bg-surface-container-lowest p-3 brutal-border brutal-hover flex justify-center items-center">
+<span class="font-label-bold text-label-bold uppercase">IN</span>
+</button>
+<button aria-label="GitHub" class="bg-surface-container-lowest p-3 brutal-border brutal-hover flex justify-center items-center">
+<span class="font-label-bold text-label-bold uppercase">GH</span>
+</button>
+<a href="tel:6379891950" aria-label="Phone" class="bg-surface-container-lowest p-3 brutal-border brutal-hover flex justify-center items-center"><span class="font-label-bold text-label-bold uppercase">PH</span></a></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface text-primary dark:text-primary-fixed w-full py-stack-xl mt-stack-xl border-t-[3px] border-on-background flat flex flex-col md:flex-row justify-between items-center px-margin-page gap-stack-lg">
+<div class="font-headline-sm text-headline-sm font-bold">© 2026 SARANKUMAR K // BUILT TO DISRUPT</div>
+<div class="flex gap-6 flex-wrap justify-center">
+<a class="font-label-bold text-label-bold uppercase text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors active:translate-y-1" href="#">GitHub</a>
+<a class="font-label-bold text-label-bold uppercase text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors active:translate-y-1" href="#">LinkedIn</a>
+
+<a class="font-label-bold text-label-bold uppercase text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-container transition-colors active:translate-y-1" href="#">Email</a>
+</div>
+</footer>
+
+
+</body></html>
